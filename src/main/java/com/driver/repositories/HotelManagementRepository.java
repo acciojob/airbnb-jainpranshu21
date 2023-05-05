@@ -18,11 +18,11 @@ public class HotelManagementRepository {
     public String addHotel(Hotel hotel){
         String name=hotel.getHotelName();
         if(name.length()==0 || hotel==null)
-            return "Failure name can't be null";
+            return "AN EMPTY A FAILURE";
         if(hotelDb.containsKey(name))
-            return "Failure duplicate name";
+            return "FAILURE";
         hotelDb.put(name,hotel);
-        return "Hotel added successfully";
+        return "SUCCESS";
     }
 
     public Integer addUser(User user){
